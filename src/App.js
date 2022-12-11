@@ -8,8 +8,11 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/recipes" element={<Recipes></Recipes>}></Route>
+        <Route path="/">
+          <Home></Home>
+        </Route>
+        <Route path="/recipes" element={<Recipes></Recipes>}>
+          <Recipes></Recipes>
         </Route>
       </Routes>
     </div>
