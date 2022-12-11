@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/chef-kiss/static/css/main.073c9b0a.css",
-    "main.js": "/chef-kiss/static/js/main.80144da6.js",
+    "main.css": "/chef-kiss/static/css/main.e6c13ad2.css",
+    "main.js": "/chef-kiss/static/js/main.3e77ef8f.js",
     "static/js/787.999c617a.chunk.js": "/chef-kiss/static/js/787.999c617a.chunk.js",
-    "static/media/logo.svg": "/chef-kiss/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/favicon.jpeg": "/chef-kiss/static/media/favicon.7ae1ecfff020287ca909.jpeg",
     "index.html": "/chef-kiss/index.html",
-    "main.073c9b0a.css.map": "/chef-kiss/static/css/main.073c9b0a.css.map",
-    "main.80144da6.js.map": "/chef-kiss/static/js/main.80144da6.js.map",
+    "main.e6c13ad2.css.map": "/chef-kiss/static/css/main.e6c13ad2.css.map",
+    "main.3e77ef8f.js.map": "/chef-kiss/static/js/main.3e77ef8f.js.map",
     "787.999c617a.chunk.js.map": "/chef-kiss/static/js/787.999c617a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.80144da6.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3e77ef8f.js"
   ]
 }
