@@ -25,11 +25,11 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="nav-bar">
+                <Link to="/chef-kiss/">Home</Link>
                 <Link to="/chef-kiss/about">About</Link>
-                <a href="about.html">About</a>
-                <a href="merch.html">Merch</a>
-                <a href="Recipes.html">Recipes</a>
-                <a href="contact.html">Contact</a>
+                <Link to="/chef-kiss/merch">Merch</Link>
+                <Link to="/chef-kiss/recipes">Recipes</Link>
+                <Link to="/chef-kiss/contact">Contact</Link>
 		    </div>
         </div>
      );
