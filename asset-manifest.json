@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/chef-kiss/static/css/main.4a8fc227.css",
-    "main.js": "/chef-kiss/static/js/main.1d6d8410.js",
+    "main.css": "/chef-kiss/static/css/main.0f2af8f3.css",
+    "main.js": "/chef-kiss/static/js/main.3d96d71b.js",
     "static/js/787.999c617a.chunk.js": "/chef-kiss/static/js/787.999c617a.chunk.js",
+    "static/media/Honey Garlic Glazed Salmon.jpg": "/chef-kiss/static/media/Honey Garlic Glazed Salmon.766e350b605f8bd3822c.jpg",
     "static/media/IMG_0753.jpeg": "/chef-kiss/static/media/IMG_0753.48bc089d5ec524b29785.jpeg",
+    "static/media/198594927_636978533929362__n.jpg": "/chef-kiss/static/media/198594927_636978533929362_5895823369253501036_n.cd503804358d76296d8c.jpg",
+    "static/media/247517404_592283551982612__n.jpg": "/chef-kiss/static/media/247517404_592283551982612_2788117762222762960_n.030f81d0064b9e49e538.jpg",
+    "static/media/185357711_237301591503396__n.jpg": "/chef-kiss/static/media/185357711_237301591503396_204375435692852698_n.f80a653f4e0019cbed69.jpg",
     "static/media/favicon.jpeg": "/chef-kiss/static/media/favicon.7ae1ecfff020287ca909.jpeg",
     "static/media/LinkedIn.png": "/chef-kiss/static/media/LinkedIn.8a184f00cf8d23c12910.png",
     "index.html": "/chef-kiss/index.html",
-    "main.4a8fc227.css.map": "/chef-kiss/static/css/main.4a8fc227.css.map",
-    "main.1d6d8410.js.map": "/chef-kiss/static/js/main.1d6d8410.js.map",
+    "main.0f2af8f3.css.map": "/chef-kiss/static/css/main.0f2af8f3.css.map",
+    "main.3d96d71b.js.map": "/chef-kiss/static/js/main.3d96d71b.js.map",
     "787.999c617a.chunk.js.map": "/chef-kiss/static/js/787.999c617a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a8fc227.css",
-    "static/js/main.1d6d8410.js"
+    "static/css/main.0f2af8f3.css",
+    "static/js/main.3d96d71b.js"
   ]
 }
