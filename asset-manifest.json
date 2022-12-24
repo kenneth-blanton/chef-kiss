@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chef-kiss/static/css/main.4df3c8a8.css",
+    "main.css": "/chef-kiss/static/css/main.62743322.css",
     "main.js": "/chef-kiss/static/js/main.fc0b604f.js",
     "static/js/787.999c617a.chunk.js": "/chef-kiss/static/js/787.999c617a.chunk.js",
     "static/media/Honey Garlic Glazed Salmon.jpg": "/chef-kiss/static/media/Honey Garlic Glazed Salmon.766e350b605f8bd3822c.jpg",
@@ -11,12 +11,12 @@
     "static/media/favicon.jpeg": "/chef-kiss/static/media/favicon.7ae1ecfff020287ca909.jpeg",
     "static/media/LinkedIn.png": "/chef-kiss/static/media/LinkedIn.8a184f00cf8d23c12910.png",
     "index.html": "/chef-kiss/index.html",
-    "main.4df3c8a8.css.map": "/chef-kiss/static/css/main.4df3c8a8.css.map",
+    "main.62743322.css.map": "/chef-kiss/static/css/main.62743322.css.map",
     "main.fc0b604f.js.map": "/chef-kiss/static/js/main.fc0b604f.js.map",
     "787.999c617a.chunk.js.map": "/chef-kiss/static/js/787.999c617a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4df3c8a8.css",
+    "static/css/main.62743322.css",
     "static/js/main.fc0b604f.js"
   ]
 }
