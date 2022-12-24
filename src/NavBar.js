@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
-    return ( 
+    
+    return (
         <div className='navi'>
             <div className='top'>
-                <div className='title'><Link to="/chef-kiss/">Chef Kiss</Link></div>
+                
+                <Link className='title' to="/chef-kiss/">Chef Kiss</Link>
                 <Link to="/chef-kiss/"><img src={logo} className="logo" id='logo' alt="logo" /></Link>
                 <div className='socials'>
                 <a href="https://twitter.com/ChefKiss_ULTD">
@@ -26,7 +28,6 @@ const NavBar = () => {
             </div>
             <div className="nav-bar">
                 <Link to="/chef-kiss/">Home</Link>
-                <Link to="/chef-kiss/about">About</Link>
                 <Link to="/chef-kiss/merch">Merch</Link>
                 <Link to="/chef-kiss/recipes">Recipes</Link>
                 <Link to="/chef-kiss/contact">Contact</Link>
