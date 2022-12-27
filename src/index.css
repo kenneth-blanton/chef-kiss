@@ -263,13 +263,28 @@ body {
     padding: 2px 8px;
   }
 
-  .slide-track {
-    overflow-x: visible;
+  .Carousel img {
+    padding: .25em .25em 0em;
+    width: 100px;
+    height: 100px;
+    border-radius: .5em;
+  }
+
+  .card {
+    min-width: 210px;
+  }
+
+  .cardBody p {
+    font-size: 10px;
   }
 
   @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-275px * 10)) }
+    100% { transform: translateX(calc(-210px * 11.53)) }
+  }
+
+  .slide-track {
+    animation: scroll 20s linear infinite;
   }
 
   .About {
@@ -287,7 +302,7 @@ body {
   .motd {
     margin-top: 2em;
     max-width: 100%;
-    margin-bottom: 4em;
+    margin-bottom: 5em;
   }
 
   .motd h1 {
@@ -307,6 +322,6 @@ body {
 
 @media only screen and (max-width: 920px) {
   .frontCap {
-    font-size: 14px;
+    font-size: 12px !important;
   }
 }
