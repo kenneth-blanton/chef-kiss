@@ -279,12 +279,12 @@ body {
   }
 
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-210px * 5.78)) }
+    0% { transform: translateX(0) }
+    100% { transform: translateX(calc(-210px * 5.77)) }
   }
 
   .slide-track {
-    animation: scroll 20s linear infinite;
+    animation: scroll 15s linear infinite;
   }
 
   .About {
@@ -302,7 +302,7 @@ body {
   .motd {
     margin-top: 2em;
     max-width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 7em;
   }
 
   .motd h1 {
