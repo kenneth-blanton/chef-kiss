@@ -280,7 +280,7 @@ body {
 
   @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-210px * 11.53)) }
+    100% { transform: translateX(calc(-210px * 5.79)) }
   }
 
   .slide-track {
