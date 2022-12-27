@@ -263,6 +263,15 @@ body {
     padding: 2px 8px;
   }
 
+  .slide-track {
+    overflow-x: visible;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-275px * 10)) }
+  }
+
   .About {
     max-width: 100%;
   }
@@ -272,7 +281,7 @@ body {
   }
 
   .frontCap {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .motd {
@@ -294,4 +303,10 @@ body {
     padding: 0 2em;
   }
 
+}
+
+@media only screen and (max-width: 920px) {
+  .frontCap {
+    font-size: 14px;
+  }
 }
