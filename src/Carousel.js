@@ -1,23 +1,62 @@
 import Recipes from './recipes.json';
-console.log(Recipes[0].image)
 const Carousel = () => {
     
     return ( 
         <div className="Carousel">
-
-            {Recipes && Recipes.map((recipe) => {
-                    return(
-                        <div className='card' key={recipe.id}>
-                            <div className='cardImage'>
-                                <img src={recipe.image} alt=""/>
+                <div className="slide-track">
+                    {Recipes && Recipes.map((recipe) => {
+                        return(
+                            <div className='card' key={recipe.id}>
+                                <div className='cardImage'>
+                                    <img src={recipe.image} alt=""/>
+                                </div>
+                                <div className='cardBody'>
+                                    <p>{recipe.shortcap}</p>
+                                </div>
                             </div>
-                            <div className='cardBody'>
-                                <p>{recipe.shortcap}</p>
+                            )
+                        }
+                        )}
+                    {Recipes && Recipes.map((recipe) => {
+                        return(
+                            <div className='card' key={recipe.id}>
+                                <div className='cardImage'>
+                                    <img src={recipe.image} alt=""/>
+                                </div>
+                                <div className='cardBody'>
+                                    <p>{recipe.shortcap}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                }
-                )}
+                            )
+                        }
+                        )}
+                    {Recipes && Recipes.map((recipe) => {
+                        return(
+                            <div className='card' key={recipe.id}>
+                                <div className='cardImage'>
+                                    <img src={recipe.image} alt=""/>
+                                </div>
+                                <div className='cardBody'>
+                                    <p>{recipe.shortcap}</p>
+                                </div>
+                            </div>
+                            )
+                        }
+                        )}
+                    {Recipes && Recipes.map((recipe) => {
+                        return(
+                            <div className='card' key={recipe.id}>
+                                <div className='cardImage'>
+                                    <img src={recipe.image} alt=""/>
+                                </div>
+                                <div className='cardBody'>
+                                    <p>{recipe.shortcap}</p>
+                                </div>
+                            </div>
+                            )
+                        }
+                        )}
+                </div>
         </div>
      );
 }

@@ -1,7 +1,7 @@
-import logo from './pics/favicon.jpeg';
-import twitter from './pics/Twitter Logo.png';
-import instagram from './pics/IG Logo.png';
-import linkedin from './pics/LinkedIn.png';
+import logo from './images/favicon.jpeg';
+import twitter from './images/Twitter Logo.png';
+import instagram from './images/IG Logo.png';
+import linkedin from './images/LinkedIn.png';
 import { Link } from 'react-router-dom';
 
 

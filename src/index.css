@@ -1,13 +1,12 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   padding: 1em 0;
   background-color: black;
 }
-
-
 
 /* NavBar.js */
 
@@ -60,8 +59,6 @@ body {
 	display: flex;
   background: #000000;
   box-shadow: 0em 0em 8px 0px white;
-  /* border-top: 1px solid white;
-  border-bottom: 1px solid white; */
 	justify-content: space-evenly;	
 }
 
@@ -94,41 +91,69 @@ body {
   color: white;
   display: flex;
   overflow-x: scroll;
+  background-color: #000000;
 }
 
 .Carousel img {
+  padding: .25em .25em 0em;
   width: 125px;
   height: 125px;
-  margin: 0em 1em;
   border-radius: .5em;
 }
 
 .card {
-  min-width: 300px;
-  padding: .5em 0em;
+  min-width: 275px;
   margin: 0em 1em;
   border: 1px solid white;
   display: flex;
+  text-align: center;
   align-items: center;
   box-shadow: 0px 0px 8px 0px white;
   border-radius: .5em;
 }
 
 .cardBody p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0em 1em;
 }
+
+.Carousel::-webkit-scrollbar {
+  background: #000000;
+  height: 4px;
+}
+
+.Carousel::-webkit-scrollbar-thumb{
+  border-radius: 2em;
+  background: #ffffff;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 12.28)) }
+}
+	
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide-track:hover, .slide-track:focus {
+  animation-play-state: paused;
+}
+
 
 /* About.js */
 
 .About {
-  max-width: 45%;
+  justify-content: center;
   align-items: center;
   background-color: #000000;
+  max-width: 50%;
 }
 
 .front {
-  margin: 0em 2em;
+  margin: 1em 2em;
   position: relative;
   box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
   border-radius: .5em;
@@ -136,6 +161,7 @@ body {
 
 #headshot {
   max-width: 100%;
+  max-height: 100%;
   border-radius: .5em;
   margin-bottom: -.25em;
 }
@@ -160,20 +186,27 @@ body {
 /* MotD.js */
 
 .motd {
-  text-align: center;
-  max-height: 100%;
-  max-width: 45%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  max-width: 50%;
   color: #ffffff;
-  box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
+}
+
+.meal {
   border-radius: .5em;
+  box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
+  margin: 0em 2em;
+  position: relative;
 }
 
 .mealTitle {
+  text-align: center;
   position: absolute;
   background-color: rgb(0, 0, 0, .5);
   z-index: 1;
-  width: 45%;
-  box-shadow: 0em 0em 1px 0px rgb(255, 255, 255);
+  width: 100%;
+  box-shadow: 0em 0em 2px 0px rgb(255, 255, 255);
   border-radius: .5em .5em 0em 0em;
 }
 
@@ -183,28 +216,23 @@ body {
   background-color: rgb(0, 0, 0, .7);
 }
 
-.meal {
-  position: relative;
-}
-
 #mealPic {
   border-radius: .5em;
   max-width: 100%;
+  max-height: 100%;
   margin-bottom: -.25em;
 }
 
 .mealText{
-  box-shadow: 0em 0em 1px 0px rgb(255, 255, 255);
-  position: absolute;
   text-align: center;
+  box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
   background-color: rgb(0, 0, 0, .7);
-  bottom: 0;
   width: 100%;
   border-radius: 0em 0em .5em .5em;
 }
 
 .mealCap {
-  padding: 0em 5em;
+  padding: .25em 2em;
   margin: .25em 0em;
 }
 
@@ -239,18 +267,18 @@ body {
     max-width: 100%;
   }
 
+  #headshot {
+    height: 365px;
+  }
+
   .frontCap {
     font-size: 12px;
   }
 
   .motd {
     margin-top: 2em;
-    max-width: 84%;
+    max-width: 100%;
     margin-bottom: 4em;
-  }
-
-  .mealTitle {
-    width: 84%;
   }
 
   .motd h1 {
@@ -258,13 +286,12 @@ body {
   }
 
   .mealText {
-    box-shadow: 0em 4px 8px 0em white;
-    margin-bottom: -5.5em;
+    margin-bottom: -5em;
     background-color: rgb(0, 0, 0, 1);
   }
 
   .mealCap {
-    padding: 0 .5em;
+    padding: 0 2em;
   }
 
 }
