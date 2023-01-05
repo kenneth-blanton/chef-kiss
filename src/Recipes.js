@@ -1,7 +1,18 @@
+import Recipe from './recipes.json';
+
 const Recipes = () => {
     return ( 
-        <div>
-            <h1>Recipes Page</h1>
+        <div className='home'>
+            {Recipe && Recipe.map((recipe) => {
+                        return(
+                            <div className='bigCard' key={recipe.id}>
+                                    <img src={recipe.image} alt=""/>
+                                    <p>{recipe.caption}</p>
+                                    <a href={recipe.checkout}><button>{recipe.cost}</button></a>
+                            </div>
+                            )
+                        }
+                        )}
         </div>
      );
 }

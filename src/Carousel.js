@@ -7,12 +7,8 @@ const Carousel = () => {
                     {Recipes && Recipes.map((recipe) => {
                         return(
                             <div className='card' key={recipe.id}>
-                                <div className='cardImage'>
                                     <img src={recipe.image} alt=""/>
-                                </div>
-                                <div className='cardBody'>
                                     <p>{recipe.shortcap}</p>
-                                </div>
                             </div>
                             )
                         }
@@ -20,42 +16,39 @@ const Carousel = () => {
                     {Recipes && Recipes.map((recipe) => {
                         return(
                             <div className='card' key={recipe.id}>
-                                <div className='cardImage'>
                                     <img src={recipe.image} alt=""/>
-                                </div>
-                                <div className='cardBody'>
                                     <p>{recipe.shortcap}</p>
-                                </div>
                             </div>
                             )
                         }
                         )}
                     {Recipes && Recipes.map((recipe) => {
-                        return(
-                            <div className='card' key={recipe.id}>
-                                <div className='cardImage'>
-                                    <img src={recipe.image} alt=""/>
-                                </div>
-                                <div className='cardBody'>
-                                    <p>{recipe.shortcap}</p>
-                                </div>
-                            </div>
-                            )
-                        }
-                        )}
+                    return(
+                        <div className='card' key={recipe.id}>
+                                <img src={recipe.image} alt=""/>
+                                <p>{recipe.shortcap}</p>
+                        </div>
+                        )
+                    }
+                    )}
                     {Recipes && Recipes.map((recipe) => {
-                        return(
-                            <div className='card' key={recipe.id}>
-                                <div className='cardImage'>
-                                    <img src={recipe.image} alt=""/>
-                                </div>
-                                <div className='cardBody'>
-                                    <p>{recipe.shortcap}</p>
-                                </div>
-                            </div>
-                            )
-                        }
-                        )}
+                    return(
+                        <div className='card' key={recipe.id}>
+                                <img src={recipe.image} alt=""/>
+                                <p>{recipe.shortcap}</p>
+                        </div>
+                        )
+                    }
+                    )}
+                    {Recipes && Recipes.map((recipe) => {
+                    return(
+                        <div className='card' key={recipe.id}>
+                                <img src={recipe.image} alt=""/>
+                                <p>{recipe.shortcap}</p>
+                        </div>
+                        )
+                    }
+                    )}
                 </div>
         </div>
      );

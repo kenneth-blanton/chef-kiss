@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Recipes from './recipes.json';
 
 const MotD = () => {
@@ -14,7 +15,7 @@ const MotD = () => {
                 <img src={Recipes[d].image} alt="mealPic" id='mealPic'/>
                 <div className='mealText'>
                     <p className='mealCap'>{Recipes[d].caption}</p>
-                    <button className='mealLink'>Go To Recipe</button>
+                    <Link to="/chef-kiss/recipes"><button className='mealLink'>Go To Recipe</button></Link>
                 </div>
             </div>
         </div>
