@@ -15,7 +15,7 @@ const MotD = () => {
                 <img src={Recipes[d].image} alt="mealPic" id='mealPic'/>
                 <div className='mealText'>
                     <p className='mealCap'>{Recipes[d].caption}</p>
-                    <Link to="/chef-kiss/recipes"><button className='mealLink'>Go To Recipe</button></Link>
+                    <Link to="/recipes"><button className='mealLink'>Go To Recipe</button></Link>
                 </div>
             </div>
         </div>
