@@ -16,8 +16,8 @@ function App() {
     <div className='App'>
       <NavBar></NavBar>
       <Routes>
-        <Route exact path='' element={<Home></Home>}></Route>
-        <Route exact path='/merch' element={<Merch></Merch>}></Route>
+        <Route exact path='/chef-kiss/' element={<Home></Home>}></Route>
+        <Route exact path='chef-kiss/merch' element={<Merch></Merch>}></Route>
         <Route path='chef-kiss/recipes' element={<Recipes></Recipes>}></Route>
         <Route exact path='chef-kiss/BuffaloWingsDownload' element={<BuffaloWingsDownload></BuffaloWingsDownload>}></Route>
         <Route exact path='chef-kiss/BlackenedSalmonDownload' element={<BlackenedSalmonDownload></BlackenedSalmonDownload>}></Route>
