@@ -11,8 +11,8 @@ const NavBar = () => {
         <div className='navi'>
             <div className='top'>
                 
-                <Link className='title' to="/chef-kiss/">Chef Kiss</Link>
-                <Link to="/chef-kiss/"><img src={logo} className="logo" id='logo' alt="logo" /></Link>
+                <Link className='title' to="/">Chef Kiss</Link>
+                <Link to="/"><img src={logo} className="logo" id='logo' alt="logo" /></Link>
                 <div className='socials'>
                 <a href="https://twitter.com/ChefKiss_ULTD">
                         <img src={twitter} alt='twitter'/>
@@ -27,10 +27,10 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="nav-bar">
-                <Link to="">Home</Link>
+                <Link to="/">Home</Link>
                 <Link to="/merch">Merch</Link>
-                <Link to="/chef-kiss/recipes">Recipes</Link>
-                <Link to="/chef-kiss/contact">Contact</Link>
+                <Link to="/recipes">Recipes</Link>
+                <Link to="/contact">Contact</Link>
 		    </div>
         </div>
      );

@@ -16,15 +16,15 @@ function App() {
     <div className='App'>
       <NavBar></NavBar>
       <Routes>
-        <Route path='' element={<Home></Home>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
         <Route path='/merch' element={<Merch></Merch>}></Route>
-        <Route path='chef-kiss/recipes' element={<Recipes></Recipes>}></Route>
-        <Route exact path='chef-kiss/BuffaloWingsDownload' element={<BuffaloWingsDownload></BuffaloWingsDownload>}></Route>
-        <Route exact path='chef-kiss/BlackenedSalmonDownload' element={<BlackenedSalmonDownload></BlackenedSalmonDownload>}></Route>
-        <Route exact path='chef-kiss/HoneyGlazedSalmonDownload' element={<HoneyGlazedSalmon></HoneyGlazedSalmon>}></Route>
-        <Route exact path='chef-kiss/SalmonSlideDownload' element={<SalmonSlideDownload></SalmonSlideDownload>}></Route>
-        <Route exact path='chef-kiss/BreakfastWrapDownload' element={<BreakfastDownload></BreakfastDownload>}></Route>
-        <Route exact path='chef-kiss/contact' element={<Contact></Contact>}></Route>
+        <Route path='/recipes' element={<Recipes></Recipes>}></Route>
+        <Route exact path='/BuffaloWingsDownload' element={<BuffaloWingsDownload></BuffaloWingsDownload>}></Route>
+        <Route exact path='/BlackenedSalmonDownload' element={<BlackenedSalmonDownload></BlackenedSalmonDownload>}></Route>
+        <Route exact path='/HoneyGlazedSalmonDownload' element={<HoneyGlazedSalmon></HoneyGlazedSalmon>}></Route>
+        <Route exact path='/SalmonSlideDownload' element={<SalmonSlideDownload></SalmonSlideDownload>}></Route>
+        <Route exact path='/BreakfastWrapDownload' element={<BreakfastDownload></BreakfastDownload>}></Route>
+        <Route exact path='/contact' element={<Contact></Contact>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
