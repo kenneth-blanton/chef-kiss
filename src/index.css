@@ -148,14 +148,17 @@ body {
 .About {
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  max-width: 50%;
+  background-image: url('./images/Headshot.jpeg');
+  background-size: cover;
+  height: 950px;
+  margin: 1em 2em;
+  width: 45%;
+  border-radius: .5em;
+  box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
 }
 
 .front {
-  margin: 1em 2em;
   position: relative;
-  box-shadow: 0em 0em 8px 0px rgb(255, 255, 255);
   border-radius: .5em;
 }
 
@@ -172,8 +175,8 @@ body {
   top: 0;
   background-color: rgb(0, 0, 0, 1);
   width: 55%;
-  font-size: 17px;
-  padding: 3em 0em;
+  font-size: 20px;
+  padding: 5em 0em;
   border-radius: .5em 0em .5em 0em;
   color: #ffffff;
   box-shadow: 0em 0em 1px 0px rgb(255, 255, 255);
@@ -189,7 +192,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000000;
-  max-width: 50%;
+  width: 50%;
   color: #ffffff;
 }
 
@@ -218,8 +221,8 @@ body {
 
 #mealPic {
   border-radius: .5em;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 890px;
   margin-bottom: -.25em;
 }
 
@@ -241,6 +244,23 @@ body {
   color: #ffffff;
   cursor: pointer;
   margin-bottom: .5em;
+}
+
+/* Create.js */
+
+.create {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+.upTitle {
+  margin: auto;
+}
+
+.upName {
+  margin: auto;
 }
 
 /* Merch.js and Recipes.js */
@@ -530,7 +550,9 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   .About {
-    max-width: 100%;
+    background-size: cover;
+    max-height: 363px;
+    max-width: 330px;
   }
 
   #headshot {
@@ -538,17 +560,22 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   .frontCap {
+    padding: 3em 0;
     font-size: 12px !important;
   }
 
   .motd {
     margin-top: 2em;
-    max-width: 100%;
+    width: 100% !important;
     margin-bottom: 7em;
   }
 
   .motd h1 {
     width: 80%;
+  }
+
+  #mealPic {
+    height: 363px !important;
   }
 
   .mealText {
@@ -562,12 +589,35 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1200px) {
+
+  .About {
+    height: 490px !important;
+    width: 440px;
+  }
+
   .frontCap {
-    font-size: 12px !important;
+    font-size: 15px;
+  }
+
+  #mealPic {
+    max-height: 415px;
   }
 
   .footer {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .About{
+    height: 685px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #mealPic {
+    height: 608px;
   }
 }
