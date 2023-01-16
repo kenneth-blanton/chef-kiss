@@ -8,7 +8,7 @@ const Merch = () => {
                             <div className='bigCard' key={merch.id}>
                                     <img src={merch.image} alt=""/>
                                     <p>{merch.caption}</p>
-                                    <button>Coming Soon ({merch.cost})</button>
+                                    <button>{merch.cost}</button>
                             </div>
                             )
                         }
