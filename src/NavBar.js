@@ -45,16 +45,40 @@ const NavBar = () => {
         style={{ backgroundColor: "black", color: "white" }}
       >
         <p className="drawerSection">Pages</p>
-        <Link className="drawerLink" to="/preps">
+        <Link
+          className="drawerLink"
+          onClick={() => {
+            setOpen(false);
+          }}
+          to="/preps"
+        >
           Meal Preps
         </Link>
-        <Link className="drawerLink" to="/recipes">
+        <Link
+          className="drawerLink"
+          onClick={() => {
+            setOpen(false);
+          }}
+          to="/recipes"
+        >
           Recipes
         </Link>
-        <Link className="drawerLink" to="/merch">
+        <Link
+          className="drawerLink"
+          onClick={() => {
+            setOpen(false);
+          }}
+          to="/merch"
+        >
           Merch
         </Link>
-        <Link className="drawerLink" to="/contact">
+        <Link
+          className="drawerLink"
+          onClick={() => {
+            setOpen(false);
+          }}
+          to="/contact"
+        >
           Contact
         </Link>
         <p className="drawerSection" style={{ marginTop: 60 }}>
