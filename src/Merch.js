@@ -8,10 +8,15 @@ const Merch = () => {
           return (
             <div className="bigCard" key={merch.id}>
               <img src={merch.image} alt="" />
-              <p>{merch.caption}</p>
+              <h4>{merch.caption}</h4>
               <a href={merch.link}>
-                <button>{merch.cost}</button>
+                <button>${merch.cost}</button>
               </a>
+              <ul>
+                {merch.notes.map((note) => {
+                  return <li>{note}</li>;
+                })}
+              </ul>
             </div>
           );
         })}

@@ -414,7 +414,8 @@ input[type="number"] {
 
 .bigCard {
   display: block;
-  height: 450px;
+  /* height: 450px; */
+  padding-bottom: 1em;
   width: 275px;
   margin: 1em 2em;
   border: 1px solid white;
@@ -425,7 +426,7 @@ input[type="number"] {
   color: #ffffff;
 }
 
-.bigCard p {
+.bigCard h4 {
   font-size: 16px;
   margin: 0.5em 1em;
 }
@@ -436,6 +437,12 @@ input[type="number"] {
   background: #000000;
   color: #ffffff;
   cursor: pointer;
+}
+
+.bigCard ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Contact.js */

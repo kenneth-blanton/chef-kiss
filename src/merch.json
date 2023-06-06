@@ -3,8 +3,15 @@
     "id": 1,
     "name": "apron",
     "image": "images/apron.png",
-    "caption": "Chef Kiss Apron",
+    "caption": "Chef Kiss Stain Release Apron with Pockets and Adjustable Neck Strap",
     "cost": "24.99",
-    "link": "https://buy.stripe.com/3cs6r5gbWaAd9gc4gg"
+    "link": "https://buy.stripe.com/3cs6r5gbWaAd9gc4gg",
+    "notes": [
+      "Stain Release Technology",
+      "Adjustable Neck Strap",
+      "Lightweight",
+      "20” L x 20” W",
+      "65/35 poly cotton twill"
+    ]
   }
 ]

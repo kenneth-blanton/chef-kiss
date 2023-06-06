@@ -53,7 +53,7 @@ const productsArray = [
 function getProductData(id) {
   let productData = productsArray.find((product) => product.id === id);
 
-  if (productData == undefined) {
+  if (productData === undefined) {
     console.log("no product");
     return undefined;
   }
