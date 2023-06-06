@@ -1,10 +1,10 @@
 [
-    {
-        "id": 1,
-        "name": "apron",
-        "image": "images/apron.png",
-        "caption": "Chef Kiss Apron",
-        "cost": "Coming Soon",
-        "link": ""
-    }
+  {
+    "id": 1,
+    "name": "apron",
+    "image": "images/apron.png",
+    "caption": "Chef Kiss Apron",
+    "cost": "24.99",
+    "link": "https://buy.stripe.com/3cs6r5gbWaAd9gc4gg"
+  }
 ]
