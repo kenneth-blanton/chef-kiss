@@ -45,16 +45,16 @@ const NavBar = () => {
         style={{ backgroundColor: "black", color: "white" }}
       >
         <p className="drawerSection">Pages</p>
-        <a className="drawerLink" href="preps">
+        <a className="drawerLink" href="/preps">
           Meal Preps
         </a>
-        <a className="drawerLink" href="recipes">
+        <a className="drawerLink" href="/recipes">
           Recipes
         </a>
-        <a className="drawerLink" href="merch">
+        <a className="drawerLink" href="/merch">
           Merch
         </a>
-        <a className="drawerLink" href="contact">
+        <a className="drawerLink" href="/contact">
           Contact
         </a>
         <p className="drawerSection" style={{ marginTop: 60 }}>
