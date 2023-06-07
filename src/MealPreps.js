@@ -16,13 +16,13 @@ const MealPreps = () => {
       <div className="MealPrepOptions">
         <div class="mealOpt">
           <img src={img} alt="" />
-          <p>Chef Salad</p>
+          {/* <p>Chef Salad</p> */}
           <p>Coming Soon!</p>
           {/* <button>Serve Me Up!</button> */}
         </div>
         <div class="mealOpt">
           <img src={img} alt="" />
-          <p>Chicken Fajita Bowl</p>
+          {/* <p>Chicken Fajita Bowl</p> */}
           <p>Coming Soon!</p>
           {/* <button>Serve Me Up!</button> */}
         </div>
