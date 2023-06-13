@@ -8,6 +8,7 @@ import BlackenedSalmonDownload from "./BlackenedSalmonDownload";
 import HoneyGlazedSalmon from "./HoneyGlazedSalmon";
 import SalmonSlideDownload from "./SalmonSlideDownload";
 import BreakfastDownload from "./BreakfastWrapDownload";
+import AirFriedSrirachaWingsDownload from "./AirFriedSrirachaWingsDownload";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import MealPreps from "./MealPreps";
@@ -23,6 +24,12 @@ function App() {
         <Route path="/merch" element={<Merch></Merch>}></Route>
         <Route path="/recipes" element={<Recipes></Recipes>}></Route>
         <Route path="/success" element={<Success />}></Route>
+        <Route
+          path="/AirFriedSrirachaWingsDownload"
+          element={
+            <AirFriedSrirachaWingsDownload></AirFriedSrirachaWingsDownload>
+          }
+        ></Route>
         <Route
           exact
           path="/BuffaloWingsDownload"
