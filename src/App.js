@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Merch from "./Merch";
-import Recipes from "./Recipes";
+import Recipes from "./pages/Recipes";
 import BuffaloWingsDownload from "./BuffaloWingsDownload";
 import BlackenedSalmonDownload from "./BlackenedSalmonDownload";
 import HoneyGlazedSalmon from "./HoneyGlazedSalmon";
