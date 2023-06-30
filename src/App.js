@@ -9,6 +9,7 @@ import HoneyGlazedSalmon from "./HoneyGlazedSalmon";
 import SalmonSlideDownload from "./SalmonSlideDownload";
 import BreakfastDownload from "./BreakfastWrapDownload";
 import AirFriedSrirachaWingsDownload from "./AirFriedSrirachaWingsDownload";
+import ParmesanTurkeyMeatballsDownload from "./ParmesanTurkeyMeatballsDownload";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import MealPreps from "./MealPreps";
@@ -54,6 +55,11 @@ function App() {
           exact
           path="/BreakfastWrapDownload"
           element={<BreakfastDownload></BreakfastDownload>}
+        ></Route>
+        <Route
+          exact
+          path="/ParmesanTurkeyMeatballsDownload"
+          element={<ParmesanTurkeyMeatballsDownload />}
         ></Route>
         <Route exact path="/contact" element={<Contact></Contact>}></Route>
       </Routes>
