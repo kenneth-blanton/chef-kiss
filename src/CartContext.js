@@ -104,6 +104,9 @@ export function CartProvider({ children }) {
     cartProducts.map((cartItem) => {
       getProductData(cartItem.id).then((item) => {
         totalCost += item.price * cartItem.quantity;
+        if (cartItem.quantity > 5) {
+          totalCost = totalCost - 5;
+        }
         setCost(totalCost);
         return cost;
       });
