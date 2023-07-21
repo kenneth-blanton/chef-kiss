@@ -14,57 +14,62 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import MealPreps from "./MealPreps";
 import Success from "./Success";
+import Admin from "./pages/Admin";
+import CartProvider from "./CartContext";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/preps" element={<MealPreps />}></Route>
-        <Route path="/merch" element={<Merch></Merch>}></Route>
-        <Route path="/recipes" element={<Recipes></Recipes>}></Route>
-        <Route path="/success" element={<Success />}></Route>
-        <Route
-          path="/AirFriedSrirachaWingsDownload"
-          element={
-            <AirFriedSrirachaWingsDownload></AirFriedSrirachaWingsDownload>
-          }
-        ></Route>
-        <Route
-          exact
-          path="/BuffaloWingsDownload"
-          element={<BuffaloWingsDownload></BuffaloWingsDownload>}
-        ></Route>
-        <Route
-          exact
-          path="/BlackenedSalmonDownload"
-          element={<BlackenedSalmonDownload></BlackenedSalmonDownload>}
-        ></Route>
-        <Route
-          exact
-          path="/HoneyGlazedSalmonDownload"
-          element={<HoneyGlazedSalmon></HoneyGlazedSalmon>}
-        ></Route>
-        <Route
-          exact
-          path="/SalmonSlideDownload"
-          element={<SalmonSlideDownload></SalmonSlideDownload>}
-        ></Route>
-        <Route
-          exact
-          path="/BreakfastWrapDownload"
-          element={<BreakfastDownload></BreakfastDownload>}
-        ></Route>
-        <Route
-          exact
-          path="/ParmesanTurkeyMeatballsDownload"
-          element={<ParmesanTurkeyMeatballsDownload />}
-        ></Route>
-        <Route exact path="/contact" element={<Contact></Contact>}></Route>
-      </Routes>
-      <Footer></Footer>
-    </div>
+    <CartProvider>
+      <div className="App">
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/preps" element={<MealPreps />}></Route>
+          <Route path="/merch" element={<Merch></Merch>}></Route>
+          <Route path="/recipes" element={<Recipes></Recipes>}></Route>
+          <Route path="/success" element={<Success />}></Route>
+          <Route path="/admin" element={<Admin />}></Route>
+          <Route
+            path="/AirFriedSrirachaWingsDownload"
+            element={
+              <AirFriedSrirachaWingsDownload></AirFriedSrirachaWingsDownload>
+            }
+          ></Route>
+          <Route
+            exact
+            path="/BuffaloWingsDownload"
+            element={<BuffaloWingsDownload></BuffaloWingsDownload>}
+          ></Route>
+          <Route
+            exact
+            path="/BlackenedSalmonDownload"
+            element={<BlackenedSalmonDownload></BlackenedSalmonDownload>}
+          ></Route>
+          <Route
+            exact
+            path="/HoneyGlazedSalmonDownload"
+            element={<HoneyGlazedSalmon></HoneyGlazedSalmon>}
+          ></Route>
+          <Route
+            exact
+            path="/SalmonSlideDownload"
+            element={<SalmonSlideDownload></SalmonSlideDownload>}
+          ></Route>
+          <Route
+            exact
+            path="/BreakfastWrapDownload"
+            element={<BreakfastDownload></BreakfastDownload>}
+          ></Route>
+          <Route
+            exact
+            path="/ParmesanTurkeyMeatballsDownload"
+            element={<ParmesanTurkeyMeatballsDownload />}
+          ></Route>
+          <Route exact path="/contact" element={<Contact></Contact>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </div>
+    </CartProvider>
   );
 }
 

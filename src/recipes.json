@@ -52,14 +52,5 @@
     "caption": "Air Fried Sriracha Wings with elements of Garlic, Honey, and Lime",
     "cost": "1.99",
     "checkout": "https://buy.stripe.com/eVaaHlcZKgYB8c8fYZ"
-  },
-  {
-    "id": 7,
-    "name": "ParmesanTurkeyMeatballs",
-    "image": "images/ParmesanTurkeyMeatballs.png",
-    "shortcap": "Parmesan Turkey Meatballs",
-    "caption": "Parmesan Turkey Meatballs",
-    "cost": "1.99",
-    "checkout": "https://buy.stripe.com/5kA9Dh0cY0ZD6404gp"
   }
 ]
