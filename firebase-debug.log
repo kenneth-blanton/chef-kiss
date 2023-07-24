@@ -1,0 +1,456 @@
+[debug] [2023-07-24T13:29:33.764Z] ----------------------------------------------------------------------
+[debug] [2023-07-24T13:29:33.766Z] Command:       /usr/local/bin/firebase /Users/kennethblanton/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-24T13:29:33.766Z] CLI Version:   12.3.0
+[debug] [2023-07-24T13:29:33.766Z] Platform:      darwin
+[debug] [2023-07-24T13:29:33.767Z] Node Version:  v16.16.0
+[debug] [2023-07-24T13:29:33.768Z] Time:          Mon Jul 24 2023 08:29:33 GMT-0500 (Central Daylight Time)
+[debug] [2023-07-24T13:29:33.768Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-24T13:29:33.875Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-24T13:29:33.877Z] > authorizing via signed-in user (knsylvest@gmail.com)
+[debug] [2023-07-24T13:29:33.878Z] [iam] checking project chef-kiss-aa4a5 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-24T13:29:33.881Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions [none]
+[debug] [2023-07-24T13:29:33.882Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:29:33.882Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:29:34.263Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions 200
+[debug] [2023-07-24T13:29:34.269Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:29:34.272Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-07-24T13:29:34.272Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:29:34.681Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-07-24T13:29:34.683Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:29:34.685Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:29:35.106Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:29:35.107Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f94aea6f-a4f0-45a4-9375-ff33674e8e0c"}
+[info] 
+[info] === Deploying to 'chef-kiss-aa4a5'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-07-24T13:29:35.747Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:29:36.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:29:36.082Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_f94aea6f-a4f0-45a4-9375-ff33674e8e0c"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-07-24T13:29:36.086Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-24T13:29:36.086Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:29:36.093Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-24T13:29:36.093Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:29:36.095Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [none]
+[debug] [2023-07-24T13:29:36.095Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:29:36.096Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [none]
+[debug] [2023-07-24T13:29:36.096Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:29:36.507Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-24T13:29:36.507Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-24T13:29:36.510Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-24T13:29:36.510Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-07-24T13:29:36.556Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com 200
+[debug] [2023-07-24T13:29:36.557Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-07-24T13:29:36.565Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com 200
+[debug] [2023-07-24T13:29:36.565Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-07-24T13:29:36.567Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig [none]
+[debug] [2023-07-24T13:29:36.945Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig 200
+[debug] [2023-07-24T13:29:36.946Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig {"projectId":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"}
+[debug] [2023-07-24T13:29:36.947Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs [none]
+[debug] [2023-07-24T13:29:37.366Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs 200
+[debug] [2023-07-24T13:29:37.367Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs {"configs":[{"name":"projects/chef-kiss-aa4a5/configs/stripe"}]}
+[debug] [2023-07-24T13:29:37.368Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables [none]
+[debug] [2023-07-24T13:29:37.742Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables 200
+[debug] [2023-07-24T13:29:37.742Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables {"variables":[{"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z"}]}
+[debug] [2023-07-24T13:29:37.744Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key [none]
+[debug] [2023-07-24T13:29:38.371Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key 200
+[debug] [2023-07-24T13:29:38.372Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key {"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z","text":"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"}
+[debug] [2023-07-24T13:29:38.380Z] Validating nodejs source
+[debug] [2023-07-24T13:29:39.414Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-24T13:29:39.415Z] Building nodejs source
+[debug] [2023-07-24T13:29:39.416Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-24T13:29:39.432Z] Found firebase-functions binary at '/Users/kennethblanton/Documents/chef-kiss/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-07-24T13:29:39.927Z] Serving at port 8717
+
+[debug] [2023-07-24T13:29:40.223Z] FetchError: request to http://localhost:8717/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8717
+    at ClientRequest.<anonymous> (/Users/kennethblanton/.cache/firebase/tools/lib/node_modules/node-fetch/lib/index.js:1505:11)
+    at ClientRequest.emit (node:events:527:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at Socket.socketErrorListener (node:_http_client:454:9)
+    at Socket.emit (node:events:527:28)
+    at Socket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-24T13:30:04.271Z] ----------------------------------------------------------------------
+[debug] [2023-07-24T13:30:04.272Z] Command:       /usr/local/bin/firebase /Users/kennethblanton/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-24T13:30:04.273Z] CLI Version:   12.3.0
+[debug] [2023-07-24T13:30:04.273Z] Platform:      darwin
+[debug] [2023-07-24T13:30:04.273Z] Node Version:  v16.16.0
+[debug] [2023-07-24T13:30:04.274Z] Time:          Mon Jul 24 2023 08:30:04 GMT-0500 (Central Daylight Time)
+[debug] [2023-07-24T13:30:04.275Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-24T13:30:04.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-24T13:30:04.374Z] > authorizing via signed-in user (knsylvest@gmail.com)
+[debug] [2023-07-24T13:30:04.375Z] [iam] checking project chef-kiss-aa4a5 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-24T13:30:04.377Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions [none]
+[debug] [2023-07-24T13:30:04.378Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:04.379Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:30:04.673Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions 200
+[debug] [2023-07-24T13:30:04.678Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:30:04.680Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-07-24T13:30:04.680Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:30:05.067Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-07-24T13:30:05.069Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:30:05.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:30:05.400Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:30:05.401Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] 
+[info] === Deploying to 'chef-kiss-aa4a5'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-07-24T13:30:05.984Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:30:06.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:30:06.247Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-07-24T13:30:06.259Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-24T13:30:06.259Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:06.268Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-24T13:30:06.268Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:06.271Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [none]
+[debug] [2023-07-24T13:30:06.274Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:06.281Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [none]
+[debug] [2023-07-24T13:30:06.281Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:06.598Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-24T13:30:06.598Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-24T13:30:06.619Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-24T13:30:06.619Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:06.660Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com 200
+[debug] [2023-07-24T13:30:06.660Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:06.672Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com 200
+[debug] [2023-07-24T13:30:06.673Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:06.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig [none]
+[debug] [2023-07-24T13:30:06.979Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig 200
+[debug] [2023-07-24T13:30:06.980Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig {"projectId":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"}
+[debug] [2023-07-24T13:30:06.981Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs [none]
+[debug] [2023-07-24T13:30:07.288Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs 200
+[debug] [2023-07-24T13:30:07.288Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs {"configs":[{"name":"projects/chef-kiss-aa4a5/configs/stripe"}]}
+[debug] [2023-07-24T13:30:07.290Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables [none]
+[debug] [2023-07-24T13:30:07.581Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables 200
+[debug] [2023-07-24T13:30:07.581Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables {"variables":[{"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z"}]}
+[debug] [2023-07-24T13:30:07.583Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key [none]
+[debug] [2023-07-24T13:30:07.908Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key 200
+[debug] [2023-07-24T13:30:07.910Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key {"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z","text":"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"}
+[debug] [2023-07-24T13:30:07.917Z] Validating nodejs source
+[debug] [2023-07-24T13:30:08.913Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-24T13:30:08.914Z] Building nodejs source
+[debug] [2023-07-24T13:30:08.915Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-24T13:30:08.931Z] Found firebase-functions binary at '/Users/kennethblanton/Documents/chef-kiss/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-07-24T13:30:09.387Z] Serving at port 8397
+
+[debug] [2023-07-24T13:30:09.688Z] FetchError: request to http://localhost:8397/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8397
+    at ClientRequest.<anonymous> (/Users/kennethblanton/.cache/firebase/tools/lib/node_modules/node-fetch/lib/index.js:1505:11)
+    at ClientRequest.emit (node:events:527:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at Socket.socketErrorListener (node:_http_client:454:9)
+    at Socket.emit (node:events:527:28)
+    at Socket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-24T13:30:26.252Z] ----------------------------------------------------------------------
+[debug] [2023-07-24T13:30:26.254Z] Command:       /usr/local/bin/firebase /Users/kennethblanton/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-24T13:30:26.255Z] CLI Version:   12.3.0
+[debug] [2023-07-24T13:30:26.255Z] Platform:      darwin
+[debug] [2023-07-24T13:30:26.255Z] Node Version:  v16.16.0
+[debug] [2023-07-24T13:30:26.256Z] Time:          Mon Jul 24 2023 08:30:26 GMT-0500 (Central Daylight Time)
+[debug] [2023-07-24T13:30:26.257Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-24T13:30:26.357Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-24T13:30:26.358Z] > authorizing via signed-in user (knsylvest@gmail.com)
+[debug] [2023-07-24T13:30:26.358Z] [iam] checking project chef-kiss-aa4a5 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-24T13:30:26.360Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions [none]
+[debug] [2023-07-24T13:30:26.361Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:26.362Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:30:26.660Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions 200
+[debug] [2023-07-24T13:30:26.665Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:30:26.668Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-07-24T13:30:26.668Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:30:27.024Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-07-24T13:30:27.027Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:30:27.029Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:30:27.501Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:30:27.503Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] 
+[info] === Deploying to 'chef-kiss-aa4a5'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-07-24T13:30:28.071Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:30:28.491Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:30:28.495Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-07-24T13:30:28.506Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-24T13:30:28.506Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:28.514Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-24T13:30:28.514Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:28.515Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [none]
+[debug] [2023-07-24T13:30:28.516Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:28.517Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [none]
+[debug] [2023-07-24T13:30:28.517Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:30:28.836Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-24T13:30:28.836Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-24T13:30:28.866Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-24T13:30:28.867Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:28.881Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com 200
+[debug] [2023-07-24T13:30:28.881Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:28.923Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com 200
+[debug] [2023-07-24T13:30:28.923Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-07-24T13:30:28.925Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig [none]
+[debug] [2023-07-24T13:30:29.308Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig 200
+[debug] [2023-07-24T13:30:29.308Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig {"projectId":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"}
+[debug] [2023-07-24T13:30:29.310Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs [none]
+[debug] [2023-07-24T13:30:29.956Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs 200
+[debug] [2023-07-24T13:30:29.957Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs {"configs":[{"name":"projects/chef-kiss-aa4a5/configs/stripe"}]}
+[debug] [2023-07-24T13:30:29.959Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables [none]
+[debug] [2023-07-24T13:30:30.296Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables 200
+[debug] [2023-07-24T13:30:30.297Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables {"variables":[{"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z"}]}
+[debug] [2023-07-24T13:30:30.299Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key [none]
+[debug] [2023-07-24T13:30:30.667Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key 200
+[debug] [2023-07-24T13:30:30.669Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key {"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z","text":"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"}
+[debug] [2023-07-24T13:30:30.678Z] Validating nodejs source
+[debug] [2023-07-24T13:30:31.580Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-24T13:30:31.581Z] Building nodejs source
+[debug] [2023-07-24T13:30:31.582Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-24T13:30:31.598Z] Found firebase-functions binary at '/Users/kennethblanton/Documents/chef-kiss/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-07-24T13:30:32.047Z] Serving at port 8775
+
+[debug] [2023-07-24T13:30:32.374Z] FetchError: request to http://localhost:8775/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8775
+    at ClientRequest.<anonymous> (/Users/kennethblanton/.cache/firebase/tools/lib/node_modules/node-fetch/lib/index.js:1505:11)
+    at ClientRequest.emit (node:events:527:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at Socket.socketErrorListener (node:_http_client:454:9)
+    at Socket.emit (node:events:527:28)
+    at Socket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-07-24T13:31:36.529Z] ----------------------------------------------------------------------
+[debug] [2023-07-24T13:31:36.531Z] Command:       /usr/local/bin/firebase /Users/kennethblanton/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-07-24T13:31:36.531Z] CLI Version:   12.3.0
+[debug] [2023-07-24T13:31:36.531Z] Platform:      darwin
+[debug] [2023-07-24T13:31:36.531Z] Node Version:  v16.16.0
+[debug] [2023-07-24T13:31:36.533Z] Time:          Mon Jul 24 2023 08:31:36 GMT-0500 (Central Daylight Time)
+[debug] [2023-07-24T13:31:36.533Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-24T13:31:36.633Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-24T13:31:36.634Z] > authorizing via signed-in user (knsylvest@gmail.com)
+[debug] [2023-07-24T13:31:36.635Z] [iam] checking project chef-kiss-aa4a5 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-24T13:31:36.636Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions [none]
+[debug] [2023-07-24T13:31:36.637Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:31:36.638Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:31:36.953Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions 200
+[debug] [2023-07-24T13:31:36.958Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chef-kiss-aa4a5:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-24T13:31:36.960Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2023-07-24T13:31:36.961Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:31:37.621Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2023-07-24T13:31:37.622Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/chef-kiss-aa4a5/serviceAccounts/chef-kiss-aa4a5@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2023-07-24T13:31:37.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:31:38.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:31:38.082Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] 
+[info] === Deploying to 'chef-kiss-aa4a5'...
+[info] 
+[info] i  deploying functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run
+[info] ✔  functions: Finished running predeploy script. 
+[debug] [2023-07-24T13:31:38.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 [none]
+[debug] [2023-07-24T13:31:39.055Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 200
+[debug] [2023-07-24T13:31:39.057Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5 {"projectId":"chef-kiss-aa4a5","projectNumber":"1061615411466","displayName":"chef-kiss","name":"projects/chef-kiss-aa4a5","resources":{"hostingSite":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2e1d5eca-d638-4d50-93ee-eccada3b556e"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-07-24T13:31:39.070Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-07-24T13:31:39.070Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:31:39.078Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-07-24T13:31:39.079Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:31:39.081Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [none]
+[debug] [2023-07-24T13:31:39.084Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:31:39.091Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [none]
+[debug] [2023-07-24T13:31:39.091Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com x-goog-quota-user=projects/chef-kiss-aa4a5
+[debug] [2023-07-24T13:31:39.478Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com 200
+[debug] [2023-07-24T13:31:39.479Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-07-24T13:31:39.487Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com 200
+[debug] [2023-07-24T13:31:39.487Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-07-24T13:31:39.551Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com 200
+[debug] [2023-07-24T13:31:39.552Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-07-24T13:31:39.558Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com 200
+[debug] [2023-07-24T13:31:39.558Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chef-kiss-aa4a5/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-07-24T13:31:39.559Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig [none]
+[debug] [2023-07-24T13:31:39.949Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig 200
+[debug] [2023-07-24T13:31:39.950Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/adminSdkConfig {"projectId":"chef-kiss-aa4a5","storageBucket":"chef-kiss-aa4a5.appspot.com","locationId":"us-central"}
+[debug] [2023-07-24T13:31:39.952Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs [none]
+[debug] [2023-07-24T13:31:40.646Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs 200
+[debug] [2023-07-24T13:31:40.647Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs {"configs":[{"name":"projects/chef-kiss-aa4a5/configs/stripe"}]}
+[debug] [2023-07-24T13:31:40.649Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables [none]
+[debug] [2023-07-24T13:31:40.979Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables 200
+[debug] [2023-07-24T13:31:40.980Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables {"variables":[{"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z"}]}
+[debug] [2023-07-24T13:31:40.982Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key [none]
+[debug] [2023-07-24T13:31:41.342Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key 200
+[debug] [2023-07-24T13:31:41.343Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key {"name":"projects/chef-kiss-aa4a5/configs/stripe/variables/secret_key","updateTime":"2023-06-06T01:33:17.945700279Z","text":"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"}
+[debug] [2023-07-24T13:31:41.351Z] Validating nodejs source
+[debug] [2023-07-24T13:31:42.303Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-24T13:31:42.304Z] Building nodejs source
+[debug] [2023-07-24T13:31:42.305Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-24T13:31:42.321Z] Found firebase-functions binary at '/Users/kennethblanton/Documents/chef-kiss/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-07-24T13:31:42.770Z] Serving at port 8934
+
+[debug] [2023-07-24T13:31:43.090Z] FetchError: request to http://localhost:8934/__/quitquitquit failed, reason: connect ECONNREFUSED 127.0.0.1:8934
+    at ClientRequest.<anonymous> (/Users/kennethblanton/.cache/firebase/tools/lib/node_modules/node-fetch/lib/index.js:1505:11)
+    at ClientRequest.emit (node:events:527:28)
+    at ClientRequest.emit (node:domain:475:12)
+    at Socket.socketErrorListener (node:_http_client:454:9)
+    at Socket.emit (node:events:527:28)
+    at Socket.emit (node:domain:475:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.
