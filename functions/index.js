@@ -53,8 +53,8 @@ app.post("/", async (req, res) => {
     ],
     line_items: lineItems,
     mode: "payment",
-    success_url: "https://chefkissunlimited.com/admin",
-    cancel_url: "https://chef-kiss-aa4a5.web.app/preps",
+    success_url: "https://chefkissunlimited.com/preps",
+    cancel_url: "https://chefkissunlimited.com/preps",
   });
 
   res.send(
@@ -64,4 +64,4 @@ app.post("/", async (req, res) => {
   );
 });
 
-app.listen(4500, () => console.log("Listening on port 4500"));
+app.listen(4502, () => console.log("Listening on port 4502"));

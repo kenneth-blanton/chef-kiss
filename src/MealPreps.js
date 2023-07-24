@@ -165,7 +165,7 @@ const MealPreps = () => {
     } else {
       delivery = Number((distance * 100).toFixed(2));
     }
-    await fetch("http://localhost:4500/", {
+    await fetch("http://localhost:4502/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
