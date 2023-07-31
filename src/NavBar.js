@@ -100,23 +100,6 @@ const NavBar = () => {
           Facebook
         </a>
       </Drawer>
-
-      {/* <a href="https://www.tiktok.com/@chefkiss.unlimited?_t=8cR7VdxRBJi&_r=1">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-
-          <a href="https://www.instagram.com/chef.kiss_/">
-            <i class="fa-brands fa-instagram" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100091967840765&mibextid=LQQJ4d">
-            <i class="fa-brands fa-square-facebook" />
-          </a> */}
-      {/* <div className="nav-bar">
-        <Link to="/merch">Merch</Link>
-        <Link to="/recipes">Recipes</Link>
-        <Link to="/preps">Meal Preps</Link>
-        <Link to="/contact">Contact</Link>
-      </div> */}
     </div>
   );
 };
